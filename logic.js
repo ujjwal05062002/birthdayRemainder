@@ -6,6 +6,7 @@ var day = document.getElementById("days")
 
 
       var center  = document.querySelector(".center")
+      var secondDiv = document.querySelector(".second")
 
       var targetTime =  new Date(2025,9,30)
 
@@ -50,6 +51,7 @@ var day = document.getElementById("days")
           } 
         }
         else{
-
+          center.removeChild(secondDiv)
+          heading.innerHTML = "Happy Birthday, 2025"
         }
       },1000)
